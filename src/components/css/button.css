@@ -1,0 +1,22 @@
+.button {
+    border-radius: 8px;
+    width: 98px;
+    height: 24px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+}
+
+.primary {
+    background-color: #FF2323;
+    color: white;
+}
+
+.secondary {
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.a{
+    text-decoration: none;
+}

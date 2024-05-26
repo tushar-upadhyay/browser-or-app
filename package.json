@@ -1,7 +1,12 @@
 {
   "name": "browser-or-app",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.5.0",
+  "private": false,
+  "author": {
+    "name": "Tushar Upadhyay",
+    "email": "tusharrockpg@gmail.com",
+    "url": "https://tushar-folio.netlify.app"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -16,7 +21,11 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "main": "dist/cjs/index.ts",
+  "module": "dist/esm/index.js",
+  "types": "dist/types.d.ts",
   "scripts": {
+    "rollup": "rollup -c --bundleConfigAsCjs",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +48,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@svgr/rollup": "^8.1.0",
+    "rollup": "^4.18.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-import-css": "^3.5.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2"
   }
 }
